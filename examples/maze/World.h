@@ -60,6 +60,8 @@ public:
   void SetNodeColor(const Point2D& node, const Color32& color);
   Color32 GetNodeColor(const Point2D& node);
 
+  bool isValidPosition(const Point2D& p);
+
   int GetSize() const;
 
 private:

@@ -20,6 +20,9 @@ std::vector<Point2D> PrimExample::getVisitables(World* w, const Point2D& p) {
   auto clearColor = Color::DarkGray;
 
   // todo: code this
+  // Node current = w->GetNode(p);
+  // if (current.GetNorth())
+  // visitables.push_back(current);
 
   return visitables;
 }

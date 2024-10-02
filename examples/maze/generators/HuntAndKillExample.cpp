@@ -33,6 +33,7 @@ std::vector<Point2D> HuntAndKillExample::getVisitables(World* w, const Point2D& 
 
   // todo: code this
 
+
   return visitables;
 }
 std::vector<Point2D> HuntAndKillExample::getVisitedNeighbors(World* w, const Point2D& p) {
