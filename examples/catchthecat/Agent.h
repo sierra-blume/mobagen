@@ -5,6 +5,16 @@
 
 class World;
 
+struct Cost {
+
+};
+
+struct ANode {
+  Point2D pos;
+  int cost;
+  Cost estCost;
+};
+
 class Agent {
 public:
   explicit Agent() = default;

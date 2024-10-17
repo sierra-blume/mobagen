@@ -18,8 +18,11 @@ std::vector<Point2D> Agent::generatePath(World* w) {
 
   while (!frontier.empty()) {
     // get the current from frontier
+    Point2D current = frontier.front();
     // remove the current from frontierset
+    frontier.pop();
     // mark current as visited
+    visited[current] = true;
     // getVisitableNeightbors(world, current) returns a vector of neighbors that are not visited, not cat, not block, not in the queue
     // iterate over the neighs:
     // for every neighbor set the cameFrom
@@ -32,3 +35,6 @@ std::vector<Point2D> Agent::generatePath(World* w) {
   // if your vector is filled from the border to the cat, the first element is the catcher move, and the last element is the cat move
   return vector<Point2D>();
 }
+
+//get visitable neighbors (w and p)
+//distance to the border
